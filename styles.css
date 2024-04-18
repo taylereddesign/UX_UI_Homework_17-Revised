@@ -1,0 +1,243 @@
+body{
+    background-color:#272C2C;
+}
+
+.top-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: auto;
+    align-items: stretch;
+    
+  }
+    
+    .topnav {
+      background-color:#272C2C;
+      color: #F6F7F7;
+      overflow: hidden;
+      margin: 0 auto;
+      border-bottom: 2px solid white;
+   }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #272C2C;
+      color: #F6F7F7; 
+      
+  }
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+    }
+  
+  .topnav a {
+      text-align: center;
+      padding: 14px 16px;
+      font-size: 28px;
+      color:#F6F7F7;
+      text-decoration: none;
+      text-decoration: none;
+      font-family: 'Marcellus SC';
+  }
+  
+  .navSubtext {
+    font-size: 18px;
+    text-align: center;
+    
+    
+  }
+  
+  
+  a:hover {
+  background-color:#272C2C;
+  color:#F4786C; 
+  }
+  
+  a:active {
+      color:#ED1E0A;
+      background-color:#272C2C;
+  }
+  
+  .homepage{
+      background-color:#272C2C;
+      color: #F6F7F7;
+      overflow: hidden;
+      margin:0 auto;
+   }
+  
+   .page1_Container{
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between;
+      padding: 0 rem;
+
+   }
+  
+  .homepage{
+    font-family: 'Marcellus SC';
+    background-color:#272C2C;
+    color: #F6F7F7;
+    overflow: hidden;
+      margin:0 auto;
+  }
+
+  
+  
+  .designerType{
+      font-size: 48px;
+      justify-content: left;
+      padding-left: 64px;
+      flex-direction: flex-start;
+  }
+  
+  .titleName {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      padding: 36px;
+
+    }
+
+  h1{
+    font-size: 142px;
+    
+
+  }
+  
+  .designerSlogan{
+      font-size: 32px;
+      flex-direction: flex-end;
+      padding-left: 600px;
+      
+      
+  }
+  
+  h2{
+    text-align: left;
+    padding: 48px 64px;
+    font-size: 48px;
+    justify-content: left;
+   
+  }
+
+  h3{
+    text-align: left;
+    padding: 16px 224px;
+    font-size: 32px;
+    justify-content: right;
+    
+    
+  }
+
+
+
+  .aboutMe_document {
+
+    Border:none; 
+    width: 600px; 
+    height: 800px; 
+    overflow:scroll;
+    font-size: 36px;
+    text-align: left;
+    background-color:#2E2D2D;;
+    color:azure;
+
+
+
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+  animation-range: exit -200px;
+  
+
+ }
+
+
+.profpic{
+    display: inline-flex;
+    justify-content: left;
+   
+    align-items: center;
+}
+
+
+
+.aboutMe_container{
+
+  align-items: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+ img{
+
+    width: 600px;
+    height: 800px;
+
+ }
+
+ li{
+   list-style-type: none;
+  
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -100px;
+    
+  
+ }
+
+
+
+
+  
+ 
+
+
+  
+
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: flex-end;
+    font-family: 'Marcellus SC';
+    font-size: 18px;
+    padding-top: 64px;
+  }
+
+
+
+
+  @keyframes fade-out{
+    to {opacity: 0;}
+  }
+  @keyframes document-animation{
+    25% {opacity:1;}
+    85%, 100% {opacity: 0;}
+  }
+  */
+  
+  
+  
+  @media(prefers-reduced-motion: no-preference)
+  
+  .profpic{
+    animation: fade-in linear forwards;
+  animation-timeline: view();
+  /*
+  animation-range-start:contain;
+  animation-range-end: contain; 
+  */
+
+  animation-range: entry 100px;
+  scale: .8; opacity: 0;
+  
+  }
+  
+  @keyframes fade-in{
+    
+    to { scale: 1; opacity: 1;}
+  }
+  
