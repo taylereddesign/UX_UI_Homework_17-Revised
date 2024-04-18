@@ -131,46 +131,67 @@ body{
     
   }
 
+  .aboutMe_container{
 
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+  
+   
+  }
+  
 
   .aboutMe_document {
 
-    Border:none; 
+    border:none; 
     width: 600px; 
     height: 800px; 
-    overflow:scroll;
-    font-size: 36px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    line-height: normal;
+    font-family: 'Lato';
     text-align: left;
-    background-color:#2E2D2D;;
+    background-color:#2E2D2D;
     color:azure;
 
-
-
-    animation: fade-out linear forwards;
-    animation-timeline: view();
-  animation-range: exit -200px;
-  
+    transform: translate3d(0, 100px, 0);
 
  }
+
+/*should I apply the slide in to each of these?
+or is there a slide in on scoll like the fade-in?
+*/
+ .P1{font-size: 24px;}
+
+ .P2{font-size: 42px;}
+
+ .P3{font-size: 20px;}
+
+ .P4{font-size: 24px;}
+
+ .P5{font-size: 42px;}
+
+ .P6{font-size: 20px;}
+
+ .P7{
+  font-size: 24px;
+  font-style:italic;
+ }
+
+ .P8{font-size: 42px;}
+
+ .P9{font-size: 20px;}
+
+
 
 
 .profpic{
     display: inline-flex;
     justify-content: left;
-   
     align-items: center;
 }
 
-
-
-.aboutMe_container{
-
-  align-items: center;
-  display: inline-flex;
-  align-items: center;
-}
-
- img{
+img{
 
     width: 600px;
     height: 800px;
@@ -180,15 +201,20 @@ body{
  li{
    list-style-type: none;
   
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range: exit -100px;
-    
   
  }
 
 
+.aboutMe_card{
+  font-family: 'Lato';
+  display: flex;
+  border: #F6F7F7
+}
 
+.aboutMe_card-body{
+  display: flex;
+  
+}
 
   
  
@@ -209,35 +235,31 @@ body{
 
 
 
-
-  @keyframes fade-out{
-    to {opacity: 0;}
-  }
-  @keyframes document-animation{
-    25% {opacity:1;}
-    85%, 100% {opacity: 0;}
-  }
-  */
-  
-  
-  
-  @media(prefers-reduced-motion: no-preference)
-  
-  .profpic{
-    animation: fade-in linear forwards;
-  animation-timeline: view();
   /*
-  animation-range-start:contain;
-  animation-range-end: contain; 
-  */
+  @keyframes Slide_Up{
+    0%{
+      transform: translateY(250px);
+    }
+    100%{
+      transform: translateY(0)
+    }
+    */
 
-  animation-range: entry 100px;
-  scale: .8; opacity: 0;
-  
-  }
-  
-  @keyframes fade-in{
+
+    .come-in {
+      /*transform: translateY(100px);*/
+      transform: translate3d(0, 100px, 0);
+      animation: come-in 0.8s ease forwards;
+    }
+    .come-in:nth-child(odd) {
+      animation-duration: 0.6s;
+    }
+    .already-visible {
+      /*transform: translateY(0);*/
+      transform: translate3d(0, 0, 0);
+      animation: none;
+    }
     
-    to { scale: 1; opacity: 1;}
-  }
-  
+    @keyframes come-in {
+      to { transform: translate3d(0, 0, 0); }
+    }
