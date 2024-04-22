@@ -113,6 +113,10 @@ body{
       
       
   }
+
+  /* tried this a bunch of different ways and i'm still unsure */
+
+  /*
   
   h2{
     text-align: left;
@@ -154,13 +158,16 @@ body{
     background-color:#2E2D2D;
     color:azure;
 
-    transform: translate3d(0, 100px, 0);
+    
 
  }
 
 /*should I apply the slide in to each of these?
 or is there a slide in on scoll like the fade-in?
 */
+
+/*
+
  .P1{font-size: 24px;}
 
  .P2{font-size: 42px;}
@@ -204,6 +211,167 @@ img{
   
  }
 
+/*
+ .about-section{
+  position: relative;
+  z-index: 1;
+
+ }
+
+ .grid-2-columns{
+  grid-column-gap:0px;
+  grid-template-rows: auto;
+
+ }
+
+ .w-layout-grid{
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 16px;
+
+ }
+
+ #w-node_36db900c-06f9-caf1-582d-3cf57b0166b5-01cc2440{
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+
+ }
+
+ .sticky-column{
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  overflow: visible;
+  height: 100vh;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+  mix-blend-mode: exclusion;
+
+ }
+
+ /* img */
+
+ /*
+ .div-block{
+  position: sticky;
+  top: 0px;
+  height: auto;
+
+ }
+
+ .column.padding-horizontal.padding-custom{
+  position: relative;
+  top: 0px;
+  height: 400vh;
+  padding-right: 38px;
+  padding-left: 142px;
+
+ }
+
+ .padding-horizontal{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+
+ }
+
+
+
+ .container-text{
+  position: sticky;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  overflow: auto;
+  height: 100vh;
+ }
+
+.first-textBlock{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+}
+
+.overflow-hidden{
+  overflow: hidden;
+
+}
+
+element.style{
+  will-change: transform;
+  transform: translate3d (0px, 0%, 0px) scale3d(1,,1,1) rotateX(0deg) 
+  rotateY(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+
+}
+
+
+.aboutMe_paragraph-1{
+  margin-left: 0px;
+  font-size: 1.35vw;
+  font-family: 'Manrope';
+  font-style: capitalize;
+
+}
+
+.overflow-hidden{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.aboutMe_paragraph-2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: capitalize;
+}
+
+.aboutMe_paragraph-3{
+  margin-left: 180px;
+  font-size: 1.25vw;
+
+}
+
+.p{
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+
+}
+
+.second-textBlock{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: auto;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+
+}
+*/
+
+
+
+
 
 .aboutMe_card{
   font-family: 'Lato';
@@ -234,8 +402,8 @@ img{
   }
 
 
-
-  /*
+/*
+  
   @keyframes Slide_Up{
     0%{
       transform: translateY(250px);
@@ -244,10 +412,11 @@ img{
       transform: translateY(0)
     }
     */
+/*
 
-
-    .come-in {
+   .come-in {
       /*transform: translateY(100px);*/
+      /*
       transform: translate3d(0, 100px, 0);
       animation: come-in 0.8s ease forwards;
     }
@@ -256,6 +425,7 @@ img{
     }
     .already-visible {
       /*transform: translateY(0);*/
+      /*
       transform: translate3d(0, 0, 0);
       animation: none;
     }
@@ -263,3 +433,4 @@ img{
     @keyframes come-in {
       to { transform: translate3d(0, 0, 0); }
     }
+    */
